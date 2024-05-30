@@ -163,7 +163,7 @@ header > div {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    margin: 40px 0px;
+    margin: 80px 0px;
 }
 
 #section3 article {
@@ -203,7 +203,7 @@ header > div {
 }
 
 #section4 > div:nth-child(1) article {
-    gap: 30px;
+    gap: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -252,6 +252,9 @@ header > div {
     font-size: 22px;
 }
 
+#section4 > div.oats {
+    margin-bottom: 80px;
+}
 
 /* Section5 */
 
@@ -260,7 +263,7 @@ header > div {
 }
 
 #section5 > div:nth-child(1) article {
-    gap: 30px;
+    gap: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -293,7 +296,7 @@ header > div {
 #section6 div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 40px 0px;
+    margin: 80px 0px 0px 0px;
     gap: 30px;
 }
 
@@ -323,7 +326,7 @@ header > div {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    margin: 40px 0px;
+    margin: 80px 0px;
 }
 
 #section7 article {
@@ -363,7 +366,7 @@ header > div {
 }
 
 #section8 > div:nth-child(1) article {
-    gap: 30px;
+    gap: 15px;
     display: flex;
     flex-direction: column;
 }

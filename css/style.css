@@ -1,0 +1,480 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Général */
+
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;   
+    font-family: var(--font);
+}
+
+:root {
+    --font: "Open Sans";
+    --black: #000;
+    --prata: "Prata";
+    --white: #fff;
+    --roboto: "Roboto";
+    --gris: #7A7A7A;
+}
+
+h1{
+    font-family: var(--prata);
+    font-size: 42px;
+    color: var(--white);
+}
+
+h2 {
+    font-family: var(--prata);
+    font-size: 40px;
+    color: var(--black);
+}
+
+h3 {
+    font-size: 20px;
+    font-family: var(--prata);
+    color: var(--black);
+}
+
+p {
+    font-size: 16px;
+    color: var(--black);
+}
+
+a {
+    color: var(--gris);
+    font-size: 16px;
+    font-family: var(--roboto);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0px; 
+    display: flex;
+    gap: 40px;
+}
+    
+
+.container-width-1440 {
+    max-width: 1440px;
+    margin:  auto;
+    padding: 0 15px;
+}
+
+.container-width-1140 {
+    max-width: 1140px;
+    margin:  auto;
+    padding: 0 15px;
+}
+
+#burger_menu {
+    display: none;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 180px;
+    margin: 10px 0;
+}
+
+header > div {
+    display: flex;
+    gap: 30px;
+}
+
+
+/* Main */
+
+/* Section1 */
+
+/* background: repeating-radial-gradient(black, transparent 100px) */
+
+#section1 p {
+    color: var(--white);
+}
+
+#over {
+    position: absolute;
+    top: 123px;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1;
+    opacity: 50%;
+}
+
+#backgr {
+    background-image: url("https://s3-alpha-sig.figma.com/img/be56/f3d6/8b82e581bc867804f1b184e44e5153b8?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TEXm981TbiiQ-QKeCTDej6wW~3wRt6QNELh6pe9SDgrsqaGDJPcqeoPz6xQgvJannujw9Lu4gBjRV~h3CfbtFF5z6iEkDoGWrK4tLNCBCxJMQMzFIDMnHiCTY70nHgBpqKqqdXDmy29yS1EPSVRzaNqLdrFNpw7vJiDz4dVKlyiR5REb2Ix~YIKhNv7QVx9lKk9JgjKza99ESi54-yzPnsn1gEAcGGZX6vajymZWHQqlfph-83FNuWj6NsL7~JgBTweztZ3kfReLb~BTtiKIhi5BgXqqgIrbZ~HUnheIGk4cSCLq7WOg4WG3Yk96F6TNBWH4NJ76SI~bTxKxrsXyog__");
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    align-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+#section1 article{
+    position: relative;
+    z-index: 2;
+}
+
+/* Section2 */
+
+#section2 div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 0px;
+}
+
+#section2 div img {
+    width: 100%;
+}
+
+#section2 > div > article {
+    align-content: center;
+}
+
+#section2 > div > article > p {
+    margin: 30px 0px;
+}
+
+#section2 > div > article > a {
+    border: 1px solid var(--black);
+    padding: 5px 15px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Section3 */
+
+#section3 > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px 0px;
+}
+
+#section3 article {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0px 2px 15px var(--gris);
+    flex: 1 0 22%;
+}
+
+#section3 img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#section3 > div > article > h3 {
+    margin-left: 10px;
+}
+
+#section3 > div > article > p {
+    margin: 10px;
+    font-family: var(--prata);
+}
+
+#section3 > div > article > p:nth-child(4) {
+    font-size: 22px;
+}
+
+/* Section4 */
+
+#section4 > div:nth-child(1) {
+    align-items: center;
+}
+
+#section4 > div:nth-child(1) article {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#section4 > div:nth-child(1) > a {
+    border: 1px solid var(--black);
+    padding: 5px 15px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#section4 > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px 0px;
+}
+
+.oats article {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0px 2px 15px var(--gris);
+    flex: 1 0 22%;
+}
+
+#section4 img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.oats > article > h3 {
+    margin-left: 10px;
+}
+
+.oats > article > p {
+    margin: 10px;
+    font-family: var(--prata);
+}
+
+.oats > article > p:nth-child(4) {
+    font-size: 22px;
+}
+
+
+/* Section5 */
+
+#section5 > div:nth-child(1) {
+    align-items: center;
+}
+
+#section5 > div:nth-child(1) article {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#section5 > div:nth-child(1) > a {
+    border: 1px solid var(--black);
+    padding: 5px 15px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#section5 > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px 0px;
+}
+
+#section5 img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+
+/* Section6 */
+
+#section6 div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 0px;
+    gap: 30px;
+}
+
+#section6 div img {
+    width: 100%;
+}
+
+#section6 > div > article {
+    align-content: center;
+}
+
+#section6 > div > article > p {
+    margin: 30px 0px;
+}
+
+#section6 > div > article > a {
+    border: 1px solid var(--black);
+    padding: 5px 15px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Section7 */
+
+
+#section7 > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px 0px;
+}
+
+#section7 article {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0px 2px 15px var(--gris);
+    flex: 1 0 22%;
+}
+
+#section7 img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#section7 > div > article > h3 {
+    margin-left: 10px;
+}
+
+#section7 > div > article > p {
+    margin: 10px;
+    font-family: var(--prata);
+}
+
+#section7 > div > article > p:nth-child(4) {
+    font-size: 22px;
+}
+
+/* Section8 */
+
+#section8 > div:nth-child(1) {
+    align-items: center;
+}
+
+#section8 > div:nth-child(1) article {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#section8 > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px 0px;
+}
+
+
+
+#section8 img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+
+
+/* Footer */
+footer{
+    text-align: center;
+    background-color: var(--black);
+    padding: 40px;   
+}
+
+footer p {
+    color: var(--white);
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    #section4 > div,
+    #section5 > div,
+    #section8 > div{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    #section4 > div > a,
+    #section5 > div > a{
+        width: 80px;
+        display: block;
+        justify-self: right;
+        text-align: center;
+    }
+
+    ul{
+        display: none;
+    }
+
+    #burger_menu{
+        display: block;
+    }
+
+}   
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    #section2 > div {
+        grid-template-columns: 1fr;
+    }
+
+    #section2 > div > article {
+        margin-bottom: 15px;
+    }
+
+    #section6 > div {
+        grid-template-columns: 1fr;
+    }
+
+    #section6 > div > article{
+        margin-bottom: 15px;
+    }
+
+    #section4 > div,
+    #section5 > div,
+    #section8 > div{
+        display: grid;
+        grid-template-columns:  1fr;
+    }
+
+    #section4 > div > a,
+    #section5 > div > a{
+        width: 80px;
+        display: block;
+        justify-self: right;
+        text-align: center;
+    }
+
+    #section3 > div,
+    #section7 > div{
+        display: grid;
+        grid-template-columns:  1fr;
+    }
+
+    ul{
+        display: none;
+    }
+
+    #burger_menu{
+        display: block;
+    }
+
+    header > div {
+        gap: 20px;
+    }
+}
